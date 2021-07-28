@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+
+<!--百度浏览量分析-->
+  <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?510ba79717697c408a8be4b3a748cf3b";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>省エネガチャガチャ</title>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="./js/currentweather.js"></script>
+    <!--放天气的js-->
+  <script  src="./js/movepart2.js">     </script>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/earn.css">
+<script src="./js/change advice.js"></script>
+</head>
+
+
+
+<body background="236, 247, 206">
+
+  
+  <h2　align="center"> <font  size="5" color='#000000'>省エネ行動をして、ガチャガチャしましょう</font></h2>
+  <table>
+    <tr>
+      <td class="weareminder">
+        <div class='toppart' style="width:100%;">
+          <!--顶部两个-->
+          <div>
+            今の気温は：<div class="container-fluid">
+              <div class="content">
+                <span id="weather"></span>
+                <span class="tmp">℃</span>℃
+              </div>
+            </div>
+          </div>
+      </td>
+
+      <td  class="costreminder">
+
+        <!--毎週消費量の更新-->
+        <div> 先週の研究室のエネルギー消費量は：W、ガス消費量は　W
+          <br>約　杯<font color='#800000'>500mlコーラ‼</font>
+        </div>
+      </td>
+    </tr>
+    </div>
+
+  </table>
+
+
+<!--每天变化的quiz-->
+  <div class="reminder1" style="width:100%; height:auto; float:left;background-color:rgba(245, 250, 253, 0.7);border:1px solid;
+    border-radius:25px; border-color: azure; ">
+    <table>
+      <tr id="question"></tr>
+    </tr>
+</table>
+
+<table>
+
+  
+  <tr><font color='#008080'><b> <div id="flip1"> </div>　</b>
+     <div id="panel1"></div>
+     <b><div id="flip2"> </div></b>
+      <div id="panel2"></div></font>
+  </tr>
+</table>
+  </div>
+
+
+
+
+  <div class="ad1" style="width:100%; height:auto; float:left; background-color:rgba(255, 255, 255, 0.9)" >
+
+    <table >
+      <font color='#008080'><b> <span id="week"></span></b></font><!--每天变化的省エネアドバイス-->
+    </br> </br><b><span id="title"></span></b>
+    <br/><br/>
+      <tr id="content">
+
+</tr>
+    </table>
+  </div>
+
+
+
+  
+  
+
+
+  <div class="reminder1" style="width:100%; height:auto; float:left;background-color:rgb(252, 240, 240);border:1px solid;
+  border-radius:25px; border-color: azure; font-size: smaller;" >
+<b>  <font color='#008080'><span id="sharingweb"></span></b></font><!--每天变化的ウェブサイト-->
+   </div>
+
+
+
+
+
+
+
+   <table >
+  
+    <td class="imanopoint">  
+      <font  size="5" color='#000000'><b>ガチャガチャしよう！</b></font></br>
+      今のポイント:&nbsp;<span class="point_dom"></span> 
+    </td>
+    </table>
+    
+    
+    <h2>
+      今日の省エネ行動をクリックして点数を取ってください。
+    </h2>
+    <ul class="all_matter">
+    </ul>
+    
+    
+    <h2>
+      ガチャガチャして、九大生物を集めよう！(3ポイントでSSRカードを抽選できます。）
+    </h2>
+    <div class="draw_wrapper">
+      <div onclick="luck('2')">
+          <p>2ポイントガチャガチャ</p>
+          <img src="./img/gacha.png" alt="">
+      </div>
+    &nbsp;
+      <div class="3point" onclick="luck('3')">
+          <p>3ポイントガチャガチャ</p>
+          <img src="./img/gacha.png" alt="">
+      </div>
+    </div>
+    <div class="mask" onclick="hideImg()">
+      <div class="img_wrapper" onclick="stopDef(event)">
+          <img class="get_img" src="./img/1.jpeg" alt="">
+      </div>
+    </div>
+    
+    <td  style="width:100%; height:auto; float:left;background-color:rgba(245, 250, 253, 0.7);border:1px solid;
+    border-radius:25px; border-color: azure; ">ガチャガチャ抽選説明
+    <br/>①各ガチャガチャの抽選は1日1回のみ
+    <br/>②カードは全部で6枚あり、SSRとSRが1枚ずつ、3ポイントガチャガチャに限定されています。
+    <br/>③カードの入手確率：
+    <br/>2ポイント：
+    <br/>SR  20%
+    <br/>R 80%
+    
+    <br/>3ポイント：
+    <br/>SSR     6.25%
+    <br/>SR   37.5%
+    <br/>R  56.25%
+    
+  </td>
+    
+    <script src="./js/earn.js"></script>
+    
+
+</body>
+
+
+<style type="text/css">
+  body {
+    background-image: url(BG.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    padding: 70px 0;
+    font: normal 100% Helvetica, Arial, sans-serif;
+    height: auto;
+    width: auto\9;
+    background-color: rgb(242, 250, 242)
+  }
+
+  img {
+    height: auto;
+    width: auto\9;
+    width: 100%;
+  }
+
+  .tmp {
+    color: rgb(68, 114, 117);
+    font-weight: bold;
+  }
+
+  .weareminder {
+    font-weight: bold;
+    width: auto;
+    padding: 20px;
+    background-image: url(1.1.png);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    padding: 20px 0;
+    border: 1px solid;
+    border-radius: 25px;
+    border-color: azure;
+    width: 50%;
+    background-color: rgba(207, 238, 241, 0.5)
+  }
+
+
+  .costreminder {
+    font-weight: bold;
+    width: auto;
+    padding: 20px;
+    background-image: url(2.3.png);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    padding: 20px 0;
+    border: 1px solid;
+    border-radius: 25px;
+    border-color: azure;
+    width: 100%;
+    height: auto;
+    float: left;
+    background-color: rgba(206, 232, 253, 0.5);
+    border: 1px solid;
+    border-radius: 25px;
+    border-color: azure;
+  }
+
+
+  .ad1 {
+    font-weight:normal;
+    color: rgb(0, 0, 0);
+    width: 1000px;
+    padding: 20px;
+    background-image: url();
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: left;
+    padding: 20px 0;
+    border: 1px solid;
+    border-radius: 25px;
+    border-color: azure;
+  }
+
+
+  .reminder1 {
+    font-weight: normal;
+    width: 1000px;
+    padding: 20px;
+    background-image: url(png);/*提问背景图*/
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    padding: 20px 0;
+    border: 1px solid;
+    border-radius: 25px;
+    border-color: azure;
+  }
+</style>
+
+<style type="text/css"> 
+    #panel1,#flip1
+    {
+        padding:5px;
+        text-align:center;
+        background-color: rgba(217, 238, 255, 0.5);
+        border: 1px solid;
+    border-radius: 25px;
+    border-color: azure;
+    }
+    #panel1
+    {  
+        display:none;
+    }
+
+    #panel2,#flip2
+    {
+        padding:5px;
+        text-align:center;
+        background-color: rgba(217, 238, 255, 0.5);
+        border: 1px solid;
+    border-radius: 25px;
+    border-color: azure;
+    }
+    #panel2
+    {
+        display:none;
+    }
+    </style>
+<script src="change advice.js"></script>
+
+</html>
