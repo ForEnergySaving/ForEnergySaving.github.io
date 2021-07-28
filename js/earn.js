@@ -33,12 +33,12 @@ var getImg;
 
 //2点の画像
 var twoArr = [
-  "./img/1.猿SR.jpg",  "./img/3.牛SR.jpg","./img/4.コオロギR.jpg","./img/5.スパイダーR.jpg","./img/4.コオロギR.jpg","./img/5.スパイダーR.jpg","./img/4.コオロギR.jpg","./img/5.スパイダーR.jpg",
+  "./img/1.jpg",  "./img/3.jpg","./img/4.jpg","./img/5.jpg","./img/4.jpg","./img/5.jpg","./img/4.jpg","./img/5.jpg",
 ]
 
 //3点の画像
 var threeArr = [
-  "./img/2.イノシシSSR.jpg", "./img/6.狸SR.jpg","./img/6.狸SR.jpg", "./img/1.猿SR.jpg","./img/1.猿SR.jpg", "./img/3.牛SR.jpg","./img/3.牛SR.jpg","./img/4.コオロギR.jpg","./img/5.スパイダーR.jpg","./img/4.コオロギR.jpg","./img/5.スパイダーR.jpg","./img/4.コオロギR.jpg","./img/5.スパイダーR.jpg",
+  "./img/2.jpg", "./img/6.jpg","./img/6.jpg", "./img/1.jpg","./img/1.jpg", "./img/3.jpg","./img/3.jpg","./img/4.jpg","./img/5.jpg","./img/4.jpg","./img/5.jpg","./img/4.jpg","./img/5.jpg",
 ]
 
 
