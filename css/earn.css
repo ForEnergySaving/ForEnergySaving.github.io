@@ -1,0 +1,231 @@
+body {
+    padding-top: 12px;
+    background-image: url(../img/BG.png);
+}
+
+body {
+    background-image: url(../img/BG.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    padding: 70px 0;
+    font: normal 100% Helvetica, Arial, sans-serif;
+    height: auto;
+    width: auto\9;
+    background-color: rgb(242, 250, 242)
+  }
+
+.back {
+    
+    height: 32px;
+    width: 32px;
+    margin-bottom: 20px;
+    padding-left: 12px;
+}
+
+
+
+.back img {
+    
+    height: 32px;
+    width: 32px;
+}
+
+.point_wrapper {
+    text-align: left;
+    padding: 12px;
+    word-break: break-all;
+}
+
+.point_dom {
+    color: #7dc5eb
+}
+
+h2 {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0 12px;
+    text-align: left;
+    margin-bottom: 35px;
+
+}
+
+.all_matter {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 12px 30px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color:  rgba(233, 248, 205, 0.8);
+
+}
+
+.all_matter li {
+    width: 33.3%;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-break: break-all;
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    border-right: 1px solid #eee;
+    cursor: pointer;
+}
+
+.all_matter li:nth-of-type(3n) {
+    border-bottom: 1px solid #eee;
+    border-right: 1px solid #eee;
+}
+
+.draw_wrapper {
+    background-image: url(../img/BG.png);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.imanopoint {
+    color: rgb(68, 114, 117);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: left;
+    padding: 20px 0;
+    border: 1px solid;
+    border-radius: 25px;
+    border-color: rgb(223, 255, 255);
+    background-color:  rgba(255, 255, 255, 0.8)
+}
+.draw_wrapper>div {
+    background-image: url(../img/gacha.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(238, 250, 171, 0.2);
+    padding: 12px;
+    border: 1px solid;
+    border-radius: 25px;
+    border-color: azure;
+   
+    cursor: pointer;
+    border: 3px solid;
+    border-radius: 25px;
+    border-color: rgb(255, 255, 255);
+}
+
+.draw_wrapper p {
+    background-image: url(../img/gacha.png);
+    margin-bottom: 8px;
+}
+
+.draw_wrapper img {
+    background-image: url(../img/gacha.png);
+    height: 48px;
+    width: 48px;
+}
+
+
+.mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100wh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.img_wrapper {
+    background-image: url(../img/gacha.png);
+    width: 80%;
+}
+
+.img_wrapper img {
+    background-image: url(../img/gacha.png);
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.tmp {
+    color: rgb(68, 114, 117);
+    font-weight: bold;
+  }
+
+  .weareminder {
+    font-weight: bold;
+    width: auto;
+    padding: 20px;
+    background-image: url(1.1.png);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    padding: 20px 0;
+    border: 1px solid;
+    border-radius: 25px;
+    border-color: azure;
+    width: 50%;
+    background-color: rgba(207, 238, 241, 0.5)
+  }
+
+
+  .costreminder {
+    font-weight: bold;
+    width: auto;
+    padding: 20px;
+    background-image: url(2.3.png);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    padding: 20px 0;
+    border: 1px solid;
+    border-radius: 25px;
+    border-color: azure;
+    width: 100%;
+    height: auto;
+    float: left;
+    background-color: rgba(206, 232, 253, 0.5);
+    border: 1px solid;
+    border-radius: 25px;
+    border-color: azure;
+  }
+
+  .ad1 { font-weight:normal;
+    color: rgb(0, 0, 0);
+    width: 1000px;
+    padding: 20px;
+    background-image: url();
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: left;
+    padding: 20px 0;
+    border: 1px solid;
+    border-radius: 25px;
+    border-color: azure;
+}
+
+
+    .pointpart {  font-weight:normal;
+        color: rgb(0, 0, 0);
+        width: 1000px;
+        padding: 20px;
+        background-image: url();
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        background-size: contain;
+        text-align: left;
+        padding: 20px 0;
+        border: 1px solid;
+        border-radius: 25px;
+        border-color: azure;
+    }
