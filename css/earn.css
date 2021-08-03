@@ -97,7 +97,7 @@ h2 {
     border: 1px solid;
     border-radius: 25px;
     border-color: rgb(223, 255, 255);
-    background-color:  rgba(255, 255, 255, 0.8)
+    background-color:  rgba(255, 154, 154, 0.7)
 }
 .draw_wrapper>div {
     background-image: url(../img/gacha.png);
